@@ -242,7 +242,7 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 */
 
 
-//******TEKRAR BAK !!!*******
+
 let sesliHarf = ["a","A","e","E","ı","I","i","İ","o","O","ö","Ö","u","U","ü","Ü"];
   let sayi = 0;
 function sesliHarfSayaci(yazi) {
@@ -256,7 +256,7 @@ function sesliHarfSayaci(yazi) {
 
 console.log(sesliHarfSayaci("Workintech"))
 
-//********************************* */
+
 
 
 
