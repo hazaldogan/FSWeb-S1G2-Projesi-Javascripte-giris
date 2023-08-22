@@ -115,6 +115,8 @@ function oyun(oyuncu, bilgisayar) {
   }else return "Beraberlik"
 }
 
+//*********Beraberliği if e yazıp kazanma olasılıklarını else if olarak yazıp else kısmına kaybetmeyi ekleyerek kısaltabilirsin.***********
+
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
 Öncelikle aşağıdakileri yap:
@@ -241,20 +243,18 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 
 
 //******TEKRAR BAK !!!*******
-
-function sesliHarfSayaci(yazi) {
-  let sesliHarf = "a,A,e,E,ı,I,i,İ,o,O,ö,Ö,u,U,ü,Ü";
-  let sesliDizi = sesliHarf.split(',');
+let sesliHarf = ["a","A","e","E","ı","I","i","İ","o","O","ö","Ö","u","U","ü","Ü"];
   let sayi = 0;
+function sesliHarfSayaci(yazi) {
   for(let i=0; i< yazi.length;i++){
-    if(yazi[i].match(sesliDizi)){
+    if(sesliHarf.includes(yazi[i])){
       sayi++;
     }
   }
   return sayi;
 }
 
-console.log(sesliHarfSayaci("Workintech'in sprint 1'deki ikinci gün eğitiminin ödevini tamamlamak için son sorumu çözüyorum."))
+console.log(sesliHarfSayaci("Workintech"))
 
 //********************************* */
 
